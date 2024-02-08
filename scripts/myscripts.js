@@ -1,20 +1,12 @@
-$(window).on('load', function() {
-
-<script>
-    // Get the element with the class "pop-display"
-    const popDisplay = document.querySelector('.pop-display');
-
-    // Get the pop-up box
-    const popup = document.getElementById('popup');
-
-    // Show the pop-up box when hovering over the element
-    popDisplay.addEventListener('mouseenter', function() {
-        popup.style.display = 'block';
+$(document).ready(function(){
+    // When hovering over the element with class "pop-display"
+    $(".pop-display").hover(function(){
+        // Show the pop-up box and its content
+        $("#popup").show();
+        $("#popup h3").show();
+    }, function(){
+        // Hide the pop-up box and its content when mouse leaves the element
+        $("#popup").hide();
+        $("#popup h3").hide();
     });
-
-    // Hide the pop-up box when mouse leaves the element
-    popDisplay.addEventListener('mouseleave', function() {
-        popup.style.display = 'none';
-    });
-</script>
 });
