@@ -142,6 +142,15 @@ a.source:visited {
   background-position: -72px 0 !important;
 }
 
+.popup {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
 /* Storymap logo image above the title */
 #logo {
   height: 30px;
