@@ -1,3 +1,5 @@
+$(window).on('load', function() {
+
 <script>
     // Get the element with the class "pop-display"
     const popDisplay = document.querySelector('.pop-display');
@@ -15,3 +17,4 @@
         popup.style.display = 'none';
     });
 </script>
+});
