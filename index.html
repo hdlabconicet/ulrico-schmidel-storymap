@@ -60,6 +60,37 @@
       tap: false
     });
     
+    document.addEventListener("DOMContentLoaded", function() {
+    const popupDiv = document.querySelector('.leaflet-popup');
+    const popupText = document.getElementById('popup-text').textContent;
+
+    popupDiv.addEventListener('mouseenter', function() {
+      const dialogBox = document.createElement('div');
+      dialogBox.classList.add('dialog-box');
+      dialogBox.textContent = popupText;
+
+      // Styling for the dialog box
+      dialogBox.style.position = 'absolute';
+      dialogBox.style.top = '50%';
+      dialogBox.style.left = '50%';
+      dialogBox.style.transform = 'translate(-50%, -50%)';
+      dialogBox.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+      dialogBox.style.padding = '20px';
+      dialogBox.style.border = '1px solid #ccc';
+      dialogBox.style.borderRadius = '5px';
+      dialogBox.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.1)';
+      
+      // Appending dialog box to the body
+      document.body.appendChild(dialogBox);
+    });
+
+    popupDiv.addEventListener('mouseleave', function() {
+      const dialogBox = document.querySelector('.dialog-box');
+      if (dialogBox) {
+        dialogBox.remove();
+      }
+    });
+  }); 
   </script>
 
   <script type="text/javascript" src="google-doc-url.js"></script>
@@ -67,6 +98,6 @@
   <script type="text/javascript" src="scripts/constants.js"></script>
   <script type="text/javascript" src="scripts/jquery.csv.js"></script>
   <script type="text/javascript" src="scripts/storymap.js"></script>
-  <script type="text/javascript" src="scripts/myscripts.js"></script>
+ 
 </body>
 </html>
