@@ -10,3 +10,7 @@ $(document).ready(function(){
         $("#popup h3").hide();
     });
 });
+
+function popupHandler(this, text){
+    console.log(text);
+}
