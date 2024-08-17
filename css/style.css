@@ -171,14 +171,14 @@ a.source:visited {
   width: auto;
   background-color: rgba(255,255,255,0.8);
   color: black;
-  text-align: justify;
+  text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   position: absolute;
   z-index: 1;
-  margin-top: 1.5vw;
+  margin-top: 18px;
   border: 1px solid lightgray;
-  min-width: 4vw;
+  min-width: 10vw;
   visibility: hidden;
   box-shadow: 5px 5px 5px lightgray;
 }
