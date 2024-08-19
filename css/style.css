@@ -145,15 +145,6 @@ a.source:visited {
 /*
   Styles to handle visibility of leaflet popups
 */
-.leaflet-popup {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
-  border: 1px solid #ccc;
-  padding: 10px;
-  position: relative;
-  visibility: hidden;
-}
 .popup{
   position: relative;
   display: inline-block;
@@ -170,7 +161,7 @@ a.source:visited {
 .popup-text{
   width: auto;
   right:0;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,1);
   color: black;
   text-align: center;
   border-radius: 6px;
