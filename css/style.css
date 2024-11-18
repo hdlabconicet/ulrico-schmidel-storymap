@@ -145,23 +145,25 @@ a.source:visited {
 /*
   Styles to handle visibility of leaflet popups
 */
-.popup{
+.popup {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  cursor:pointer;
+  cursor: pointer;
   color: blue;
 }
+
 .popup:hover {
   color: royalblue;
 }
-.popup:hover .popup-text{
-   visibility: visible;
+
+.popup:hover .popup-text {
+  visibility: visible;
 }
-.popup-text{
+
+.popup-text {
   width: auto;
-  right:0;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   color: black;
   text-align: center;
   border-radius: 6px;
@@ -174,6 +176,39 @@ a.source:visited {
   visibility: hidden;
   box-shadow: 5px 5px 5px lightgray;
   word-wrap: break-word;
+  
+  /* Default position - right-aligned */
+  right: 0;
+}
+
+.popup:hover .popup-text {
+  visibility: visible;
+}
+
+/* Adjust position when close to the left edge of the screen */
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+.popup:hover .popup-text {
+  left: 0;
+  right: auto;  /* Remove the right positioning */
+}
+
+@media (max-width: 800px) {
+  .popup-text {
+    /* Adjust for smaller screens */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 800px) {
+  .popup-text {
+    left: -100%;
+    transform: translateX(100%);
+  }
 }
 /* Storymap logo image above the title */
 #logo {
