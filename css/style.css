@@ -163,7 +163,7 @@ a.source:visited {
 
 .popup-text {
   width: auto;
-  left: 0; /* Align with the left side of the .popup */
+  left: -33px /* Align with the left side of the .popup */
   top: 100%; /* Position below the .popup */
   background-color: rgba(255, 255, 255, 1);
   color: black;
@@ -173,7 +173,7 @@ a.source:visited {
   position: absolute;
   z-index: 1;
   border: 1px solid lightgray;
-  min-width: 8vw;
+  min-width: 6vw;
   visibility: hidden;
   box-shadow: 5px 5px 5px lightgray;
   word-wrap: break-word;
