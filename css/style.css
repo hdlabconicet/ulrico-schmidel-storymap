@@ -13,6 +13,43 @@ body {
   top: 0;
   left: 0;
 }
+ /* Style the navigation menu */
+ .topnav {
+  overflow: hidden;
+  position: absolute;
+  z-index: 9999999;
+  background-color: white;
+  border-radius: 0px 0px 35px 0px;
+  box-shadow: 10px 5px 5px black;
+  opacity: 0.7;
+ }
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  color: black;
+  display: block;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+}
 
 #narration {
   position: absolute;
